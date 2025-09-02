@@ -23,18 +23,21 @@ BLYNK_WRITE(V1) {
   int value = param.asInt();
   digitalWrite(BT1, value);
   BT1Blynk.setValue(value);
+  Serial.println("BLYNK_WRITE(V1)");
 }
 
 BLYNK_WRITE(V2) {
   int value = param.asInt();
   digitalWrite(BT2, value);
   BT2Blynk.setValue(value);
+  Serial.println("BLYNK_WRITE(V2)");
 }
 
 BLYNK_WRITE(V3) {
   int value = param.asInt();
   digitalWrite(BT3, value);
   BT3Blynk.setValue(value);
+  Serial.println("BLYNK_WRITE(V3)");
 }
 
 void setup() {
